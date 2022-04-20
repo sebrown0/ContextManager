@@ -16,8 +16,8 @@ import context_manager.states.State;
 import context_manager.states.StateFactory;
 import context_manager.states.StateFactorySetter;
 import context_manager.states.StateTop;
+import core_data.CoreData;
 import library.common.forms.ContainerAction;
-import library.dakar_hr.pages.homepage.CoreData;
 
 /**
  * @author SteveBrown

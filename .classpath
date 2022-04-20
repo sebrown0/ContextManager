@@ -24,7 +24,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -35,6 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/SteveBrown/eclipse-workspace/2021/com/jars/ElementLib_Fat.jar"/>
-	<classpathentry kind="lib" path="C:/Users/SteveBrown/eclipse-workspace/2021/com/jars/DTest_Fat.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SteveBrown/eclipse-workspace/2021/com/jars/DynamicTest_Fat.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

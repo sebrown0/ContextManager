@@ -4,8 +4,8 @@
 package context_manager.contexts;
 
 import context_manager.ContextIdGetter;
+import core_data.CoreData;
 import library.common.forms.ContainerAction;
-import library.dakar_hr.pages.homepage.CoreData;
 
 
 /**

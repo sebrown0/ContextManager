@@ -6,61 +6,54 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dakar.automated_testing</groupId>
   <artifactId>ContextManager</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
+  
+  <properties>
+     <maven.compiler.source>15</maven.compiler.source>
+     <maven.compiler.target>15</maven.compiler.target>
+  </properties>
   
   <build>
     <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.2.0</version>          
-        </plugin>
-        
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
-          <configuration>
-            <release>10</release>
-          </configuration>
-        </plugin>
-        
-        <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.3.0</version>
-          <configuration>
-            <descriptorRefs>
-              <descriptorRef>jar-with-dependencies</descriptorRef>
-            </descriptorRefs>
-          </configuration>
-          <executions>
-            <execution>
-              <id>make-assembly</id> <!-- this is used for inheritance merges -->
-              <phase>package</phase> <!-- bind to the packaging phase -->
-              <goals>
-                <goal>single</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>   
+          
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>        
+      </plugin>
       
-        <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-install-plugin</artifactId>
-           <version>2.5.1</version>
-           <configuration>
-              <groupId>com.dakar.automated_testing</groupId>
-              <artifactId>someartifact</artifactId>
-              <version>1.0</version>
-              <packaging>jar</packaging>
-              <file>${basedir}/dependencies/ContextManager-1.0.jar</file>
-              <generatePom>true</generatePom>
-           </configuration>           
-        </plugin>      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>3.0.0-M1</version>   
+      </plugin>
+
     </plugins>
   </build>
   
   <dependencies>
+    <!-- DAKAR - START -->
+    
+    <dependency>
+      <groupId>com.dakar.automated_testing</groupId>
+      <artifactId>DTestCommon</artifactId>
+      <version>1.2.1</version>
+    </dependency>
+    <!--  
+    <dependency>
+      <groupId>com.dakar.automated_testing</groupId>
+      <artifactId>DynamicTest</artifactId>
+      <version>0.0.1-SNAPSHOT</version>      
+    </dependency>
+     
+    <dependency>
+      <groupId>com.dakar.automated_testing.libraries</groupId>
+      <artifactId>ElementLibrary</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
+    </dependency>
+     -->      
+    <!-- DAKAR - END -->
+    
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
